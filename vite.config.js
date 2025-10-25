@@ -10,4 +10,7 @@ export default defineConfig({
   optimizeDeps: {
     include: ["simple-peer"],
   },
+  build: {
+    chunkSizeWarningLimit: 1000, // Increase limit to 1000 KB to avoid warnings
+  },
 });
